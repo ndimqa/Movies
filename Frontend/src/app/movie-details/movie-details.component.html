@@ -1,0 +1,68 @@
+<!--<h2>Movie Details</h2>-->
+<div *ngIf="movie">
+  <div class="movie-banner-cover">
+    <img src="assets/movies/{{movie.cover}}" alt="movie cover">
+  </div>
+  <div class="movie-detail-container">
+    <div class="movie-cover">
+      <img src="assets/movies/{{movie.img}}" alt="movie poster">
+    </div>
+    <div class="movie-detail">
+      <h2>{{movie.name}}</h2>
+      <div class="short-info">
+        <div class="rate"><span>Rate: <strong>{{movie.rate}}</strong></span></div>
+        <div class="duration"><span>Length: <strong>{{movie.length}}</strong></span></div>
+      </div>
+      <div class="like"><span>Likes: <strong>{{movie.like}}</strong></span></div>
+      <p class="desc">
+        {{movie.description}}
+      </p>
+      <button (click)="goBack()" class="backButton">Go Back</button>
+      <div class="buttons">
+        <p *ngIf="isLiked === false">
+          <button (click)="onClick()" class="likeButton">Like</button>
+        </p>
+        <p *ngIf="isLiked === true">
+          <button (click)="onClick()" class="likeButton">Unlike</button>
+        </p>
+        <p>
+          <button (click)="share(movie)">Share</button>
+        </p>
+      </div>
+
+      <body>
+      <div class="main-area">
+        <h1>Reviews</h1>
+        <div>
+<!--          <label>Username</label>-->
+<!--          <input type="username" class="form-control" placeholder="Username"-->
+<!--                 [(ngModel)]="username">-->
+          <label>Leave a review</label>
+          <textarea rows="5" placeholder="Enter the comment" [(ngModel)]="descriptionText"></textarea>
+        </div>
+        <button type="button" (click)=newComment()>Post</button>
+        <br>
+        <div>
+          <div class="card" *ngFor="let comment of comments">
+            <div >
+              <div class="review">
+                <span >{{comment.username}}</span><br>
+                <span><span class="lol">Comment:</span>  <p>{{comment.description}}</p></span>
+              </div>
+              <div >
+                <button *ngIf="comment.username === currentUserName && !updateClick" class="dlt" (click)="editButton(comment.id)">Edit</button>
+                <div *ngIf="updateClick && comment.id === id">
+                  <textarea [(ngModel)]="updatedDescription" placeholder="Edit your comment" ></textarea>
+                  <button *ngIf="comment.username === currentUserName && updateClick" (click)="updateButton(comment)">Change</button>
+                </div>
+                <button *ngIf="comment.username === currentUserName"  (click)="deleteButton(comment)">Delete</button><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </body>
+    </div>
+  </div>
+</div>
+

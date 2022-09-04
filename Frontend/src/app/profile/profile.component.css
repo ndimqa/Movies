@@ -1,0 +1,22 @@
+.profile-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 2em;
+  transform: translateY(5em);
+}
+
+img {
+  width: 200px;
+}
+
+.profile-detail {
+  margin-left: 35px;
+  color: white;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+}

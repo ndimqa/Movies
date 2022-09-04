@@ -1,0 +1,52 @@
+.movies-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1em;
+}
+.movie {
+  width: 220px;
+}
+.title {
+  color: white;
+  padding-left: 40px;
+}
+p.title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.rate {
+  color: white;
+  padding-left: 40px;
+}
+.search-bar {
+  margin:  30px 0 30px 0;
+  width: 200px;
+  height: 50px;
+}
+input {
+  width: 500px;
+  height: 40px;
+  font-size: 20px;
+  background: #212121;
+  border-radius: 5px;
+}
+
+.count {
+  color: white;
+  font-size: 25px;
+}
+
+.movie-poster {
+  transition-timing-function: ease-out;
+  transition: transform .50s;
+}
+
+.movie-poster:hover {
+  transition: transform .50s;
+  transition-timing-function: ease-out;
+  transform: scale(1.02);
+}
+

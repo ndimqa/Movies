@@ -1,0 +1,29 @@
+<div class="search-bar">
+  <!--  <img src="assets/icons/search.svg" alt="search icon">-->
+  <input [(ngModel)]="searchText" name="searchText" type="search" placeholder="Search for movies..." aria-label="Search">
+</div>
+<div class="main-container">
+  <div class="movies-list-header">
+    <span class="count">
+      {{movies.length}} Movies
+    </span>
+  </div>
+  <div class="movies-list">
+    <div *ngFor="let movie of movies | filter: searchText" class="movie">
+      <a [routerLink]="['/movies', movie.id]">
+        <figure>
+          <img src="assets/movies/{{movie.img}}" alt="movie poster" class="movie-poster">
+        </figure>
+        <p class="title">{{movie.name}}</p>
+        <p class="rate">Rate: {{movie.rate}}</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!--
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
+

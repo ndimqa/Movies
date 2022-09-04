@@ -1,0 +1,15 @@
+<a [routerLink]="['/']">
+  <h1>Movies</h1>
+</a>
+<div class = "buttons">
+  <button *ngIf="!isLogged" (click)="loginButton()" class = "login-button">
+    Login
+  </button>
+  <button *ngIf="isLogged" (click)="logout()" class = "logout-button">
+    Logout
+  </button>
+  <button *ngIf="!isLogged" (click)="registerButton()" class = "register-button">
+    Register
+  </button>
+</div>
+

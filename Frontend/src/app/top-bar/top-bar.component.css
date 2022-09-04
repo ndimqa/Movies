@@ -1,0 +1,15 @@
+h1{
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+.login-button{
+  background: #dc4666;
+  margin-right: 20px;
+}
+.register-button{
+  margin-right: 20px;
+  background: #dc4666;
+}
+.logout{
+   margin-top: 0;
+   background: #dc4666;
+ }

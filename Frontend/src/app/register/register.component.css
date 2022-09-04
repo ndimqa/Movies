@@ -1,0 +1,14 @@
+h3, label {
+  color: white;
+}
+
+input {
+  width: 300px;
+  background: #212121;
+  color: white;
+  border-radius: 5px;
+}
+
+button {
+  background: #dc4666;
+}

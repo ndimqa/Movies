@@ -1,0 +1,38 @@
+<h3>Register</h3>
+
+<div>
+  <label for="name">
+    Name
+  </label>
+  <input id="name" type="text" placeholder="Name" [(ngModel)]="name">
+</div>
+
+<div>
+  <label for="surname">
+    Surname
+  </label>
+  <input id="surname" type="text" placeholder="Surname" [(ngModel)]="surname">
+</div>
+
+<div>
+  <label for="email">
+    Email
+  </label>
+  <input id="email" type="text" placeholder="Email" [(ngModel)]="email">
+</div>
+
+<div>
+  <label for="username">
+    Username
+  </label>
+  <input id="username" type="text" placeholder="Username" [(ngModel)]="login">
+</div>
+
+<div>
+  <label for="password">
+    Password
+  </label>
+  <input id="password" type="password" placeholder="Password" [(ngModel)]="password">
+</div>
+
+<button class="button" type="submit" (click)="registerFunc()">Register</button>

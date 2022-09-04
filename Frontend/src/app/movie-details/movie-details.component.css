@@ -1,0 +1,113 @@
+.movie-info-container{
+  width: 100%;
+}
+
+.movie-banner-cover {
+  position: relative;
+  max-height: 25em;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+.movie-cover img {
+  width: 15vw;
+}
+span {
+  color: white;
+}
+p {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+label {
+  color: white;
+}
+
+input {
+  width: 300px;
+  background: #212121;
+  color: white;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 500px;
+  background: #212121;
+  color: white;
+  padding-left: 8px;
+  border-radius: 5px;
+}
+
+button {
+  background: #dc4666;
+  margin-right: 20px;
+}
+.buttons {
+  display: flex;
+}
+
+.movie-detail-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 2em;
+  transform: translateY(5em);
+}
+
+.movie-detail {
+  padding: 0 1em;
+  color: cornflowerblue;
+}
+
+h2 {
+  color: #dc4666;
+  margin-top: 0;
+}
+
+.short-info {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  text-transform: capitalize;
+}
+
+div {
+  margin-right: 1em;
+}
+
+strong{
+  color: #dc4666;
+}
+
+.desc {
+  max-width: 70%;
+  line-height: 1.8;
+}
+
+span{
+    display: block;
+    margin-bottom: 1em;
+}
+
+.desc {
+  max-width: 100%;
+}
+
+.review {
+  width: 70%;
+  border: 1px #dc4666 solid;
+  margin-top: 20px;
+  background: #212121;
+  padding: 0px 0px 0px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
